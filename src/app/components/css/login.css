@@ -1,0 +1,31 @@
+.loginmaincontainer{
+  margin-bottom:5%; min-height:100% !important
+}
+.mainbox{
+  margin-top:4%;min-height:100%;
+}
+.panelbody{
+  padding-top:30px;
+}
+.loginforminputone{
+margin-bottom: 25px;width:100%;
+}
+.loginforminputtwo{
+margin-bottom: 25px;width:100%;
+  
+}
+.submitButton{
+  margin-top:40px
+}
+.doyouhaveaccount{
+  font-size:80%
+}
+ .loginpanel{
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.3);
+  background-color:#f0f0f0;
+    color: #000;
+}
+.login-headhr{
+  margin-top: 20px;
+}
