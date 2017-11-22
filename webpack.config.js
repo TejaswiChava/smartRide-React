@@ -20,11 +20,9 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                loader: 'style-loader!css-loader',
-                include: path.resolve(__dirname,'src')
-                
+                loader: 'style-loader!css-loader'
             },
-            {
+             {
                 test: /\.(png|jpg)$/,
                 loader: 'url-loader'
             }
