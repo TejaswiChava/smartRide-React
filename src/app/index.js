@@ -13,7 +13,15 @@ import About from './about';
 import Dashboard from './dashboard';
 import Config from './config';
 import RiderTypes from './ridertypes';
-import NewRiderType from './newRiderType'
+import NewRiderType from './newRiderType';
+import TicketFareTypes from './ticketfaretypes'
+import NewTicketFaretype from './newticketfaretype'
+import VehicleTiers from './vehicleTiers'
+import NewVehicleTier from './newvehicletier'
+import Stations from './stations'
+import PostNewStation from './newStation'
+import Routes from './routes'
+import NewRoute from './newroute'
 
 
 //store
@@ -35,6 +43,14 @@ render(
                  <Route path="/config" component={Config}></Route> 
                 <Route path="/config/ridertypes" component={RiderTypes}></Route>
                 <Route path="/config/ridertypes/newridertype" component={NewRiderType}></Route> 
+                <Route path="/config/ticketfaretypes" component={TicketFareTypes}></Route>
+                <Route path="/config/ticketfaretypes/newticketfaretype" component={NewTicketFaretype}></Route>
+                <Route path="/config/vehicletier" component={VehicleTiers}></Route>
+                <Route path="/config/vehicletier/newvehicletier" component={NewVehicleTier}></Route>
+                 <Route path="/config/stations" component={Stations}></Route> 
+                 <Route path="/config/stations/newstation" component={PostNewStation}></Route>
+                 <Route path="/config/routes" component={Routes}></Route>
+                 <Route path="/config/routes/newroute" component={NewRoute}></Route>
                
                 </Router>
 </Provider>, document.getElementById('todo-wrapper')

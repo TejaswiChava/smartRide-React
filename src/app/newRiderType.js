@@ -1,6 +1,5 @@
 import React from 'react';
 import { Form, Text} from 'react-form';
-import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
 
@@ -31,7 +30,7 @@ class NewRiderType extends React.Component{
             "description":this.state.description
         }
         console.log(newridertype);
-        this.props.NewRider(newridertype)
+        this.props.NewRider(newridertype);
     }
     render(){
        
@@ -98,7 +97,5 @@ return{
     ridertypes:state.ridertypes
 }
 }
-// function matchDispatchToProps(dispatch){
-//     return bindActionCreators({NewRider: NewRider}, dispatch);
-// }
+
 module.exports=connect(mapStateToProps,{NewRider})(NewRiderType);

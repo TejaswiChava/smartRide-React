@@ -40,7 +40,7 @@ class LoginForm extends React.Component{
             "password":this.state.password
         }
       
-        
+        console.log(user)
        
         var usercredentials=user.username+':'+user.password;
         var encoded=Base64.encode(usercredentials);

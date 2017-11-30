@@ -7,7 +7,7 @@ export default function (state=[],action){
         return action.payload
         case POST_NEWRIDERTYPE:
         //console.log(action.payload)
-         //return action.payload
+         return action.payload
         case DELETE_RIDERTYPE:
         // console.log(action.payload)
         // return action.payload
