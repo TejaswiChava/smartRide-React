@@ -5,6 +5,7 @@ import ticketfaretypesReducer from './ticketfaretypesReducer'
 import vehicletierReducer from './vehicletiersReducer'
 import stationsReducer from './stationsReducer'
 import routesReducer from './routesReducer'
+import vehiclesReducer from './vehiclesReducer'
 const allReducers=combineReducers({
 
     loginuser:LoginReducer,
@@ -12,7 +13,8 @@ const allReducers=combineReducers({
     ticketfaretypes:ticketfaretypesReducer,
     vehicletier:vehicletierReducer,
     stations:stationsReducer,
-    routes:routesReducer
+    routes:routesReducer,
+    vehicles:vehiclesReducer
 
 });
 

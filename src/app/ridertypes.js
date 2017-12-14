@@ -12,19 +12,33 @@ import Dialog from 'react-bootstrap-dialog';
 import  {Modal,Button} from 'react-bootstrap';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 
+  //Material UI Components
+  import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+  import {Card} from 'material-ui/Card';
+  import Divider from 'material-ui/Divider';
+  // import {Table, TableBody, TableHeader,TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
+
+  //Import the pagination component
+  import Pagination from 'materialui-pagination';
+
 
 class RiderTypes extends React.Component 
 {
   constructor (props) {
     super(props);
+   
       this.state={
         showModal:false,
+    
+      
       }
+      
     }
 componentWillMount(){
     console.log("mounted")
     this.props.fetchRiderTypes()
-  }
+
+}
 close(event) {
   this.setState({ showModal: false ,
                     showDeleteModal:false});
@@ -72,9 +86,33 @@ editFormatter(cell, row) {
   deleteFormatter(cell, row) {
     return <Button bsStyle="danger" className="listButton"  onClick={(event)=>this.deleteRider(event,row)}><Delete size={20} color={'white'} /><Dialog ref={(el) => { this.dialog = el }} /> </Button>;
   }
+ 
+ createListItems(){
+        return this.props.ridertypes.map((user)=>{
+            return(
+               <tr key={user.id}>
+                 <td>{user.id}</td>
+                 <td>{user.name}</td>
+                 <td>{user.description}</td>
+                 {/* <td>  <Link ><Edit size={25} color={'green'} onClick={(event)=>this.edit(event,user)}/></Link></td>
+                  <td>
+                     <Link >
+                      <Delete size={25} color={'#ff6663'} onClick={(event)=>this.deleteRider(event,user)}/>
+                       <Dialog ref={(el) => { this.dialog = el }} /> 
+                      </Link> 
+                  </td>  */}
+               
+                 
+                 </tr>
+            )
+        })
+    } 
+
 render(){
-  var {ridertypes}=this.props;
+
+     
     return(
+      
       <div className="row">
         <LoginNavigation />
           <div className="col-lg-2">
@@ -91,13 +129,26 @@ render(){
               </div>
             </div>
             <div className="row">
-              <BootstrapTable data={this.props.ridertypes}  bordered={true}  pagination={true} striped={true} hover={false} >
+               {/* <table className="table">
+                 <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Name</th>
+                  <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                 {this.createListItems()}
+                </tbody>
+              </table>  */}
+               <BootstrapTable data={this.props.ridertypes}  bordered={true}  pagination={true} striped={true} hover={false} >
                 <TableHeaderColumn  width="70" dataField="id" isKey={true} hidden={true}>ID</TableHeaderColumn> 
                 <TableHeaderColumn dataField="name"  className="reactTableHeader groupListHeader" columnClassName=" groupListCell"  > Name</TableHeaderColumn>
                 <TableHeaderColumn dataField="description" className="reactTableHeader groupListHeader" columnClassName="reactTableCell groupListCell" >Description</TableHeaderColumn>
                 <TableHeaderColumn width="50" className="reactTableHeader groupListHeader" columnClassName="reactTableCell groupListCell"  dataFormat={this.editFormatter.bind(this)}>Update</TableHeaderColumn> 
                 <TableHeaderColumn width="50" className="reactTableHeader groupListHeader" columnClassName="reactTableCell groupListCell"  dataFormat={this.deleteFormatter.bind(this)} >Delete</TableHeaderColumn> 
-              </BootstrapTable>
+              </BootstrapTable> 
+               
             </div> 
         
           </div>

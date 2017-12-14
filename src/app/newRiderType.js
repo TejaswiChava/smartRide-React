@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Text} from 'react-form';
 import {connect} from 'react-redux';
+import { withRouter } from 'react-router';
 
 
 import LoginNavigation from './loinNavigation.js';
@@ -31,6 +32,7 @@ class NewRiderType extends React.Component{
         }
         console.log(newridertype);
         this.props.NewRider(newridertype);
+        this.props.router.push('/config/ridertypes');
     }
     render(){
        

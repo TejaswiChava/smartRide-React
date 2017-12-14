@@ -23,6 +23,8 @@
 // }
 import axios from 'axios';
 import{Router , Route ,browserHistory } from 'react-router';
+import { Redirect } from 'react-router'
+var React = require('react');
 
 export const FETCH_RIDERTYPES = 'FETCH_RIDERTYPES'
 export const POST_NEWRIDERTYPE = 'POST_NEWRIDERTYPE'
@@ -84,9 +86,10 @@ export function NewRider(newridertype){
     }
     return function(dispatch){
         return axios.post('http://api.smartride.omniwyse.co.in/riderTypes',newridertype,reqheaders).then(response =>{
-            if(response.status==201){
-                 browserHistory.push('/config/ridertypes')
-            }
+            // if(response.status==201){
+            //      browserHistory.push('/config/ridertypes')
+                
+            // }
             dispatch(postRiderTypesSuccess(response))
         })
     }

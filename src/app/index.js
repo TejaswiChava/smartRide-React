@@ -22,6 +22,8 @@ import Stations from './stations'
 import PostNewStation from './newStation'
 import Routes from './routes'
 import NewRoute from './newroute'
+import Vehicles from './vehicles'
+import NewVehicle from './newVehicle'
 
 
 //store
@@ -51,6 +53,8 @@ render(
                  <Route path="/config/stations/newstation" component={PostNewStation}></Route>
                  <Route path="/config/routes" component={Routes}></Route>
                  <Route path="/config/routes/newroute" component={NewRoute}></Route>
+                 <Route path="/config/vehicles" component={Vehicles}></Route>
+                 <Route path="/config/vehicles/newvehicle" component={NewVehicle}></Route>
                
                 </Router>
 </Provider>, document.getElementById('todo-wrapper')
