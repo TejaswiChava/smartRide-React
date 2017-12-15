@@ -24,7 +24,12 @@ import Routes from './routes'
 import NewRoute from './newroute'
 import Vehicles from './vehicles'
 import NewVehicle from './newVehicle'
-
+import Inspectors from './inspectors'
+import NewInspector from './newInspector'
+import PassTypes from './passtypes'
+import newpasstype from './newpasstype'
+import passfaretypes from './passfaretypes'
+import newpassfaretype from './newpassfaretype'
 
 //store
 
@@ -55,6 +60,12 @@ render(
                  <Route path="/config/routes/newroute" component={NewRoute}></Route>
                  <Route path="/config/vehicles" component={Vehicles}></Route>
                  <Route path="/config/vehicles/newvehicle" component={NewVehicle}></Route>
+                 <Route path="/config/inspectors" component={Inspectors}></Route>
+                 <Route path="/config/inspectors/newinspecors" component={NewInspector}></Route>
+                 <Route path='/config/passtypes' component={PassTypes}></Route>
+                 <Route path='/config/passtypes/newpasstype' component={newpasstype}></Route>
+                 <Route path='/config/passfaretypes' component={passfaretypes}></Route>
+                 <Route path='/config/passfaretypes/newpassfaretype' component={newpassfaretype}></Route>
                
                 </Router>
 </Provider>, document.getElementById('todo-wrapper')

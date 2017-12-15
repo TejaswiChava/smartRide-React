@@ -6,6 +6,9 @@ import vehicletierReducer from './vehicletiersReducer'
 import stationsReducer from './stationsReducer'
 import routesReducer from './routesReducer'
 import vehiclesReducer from './vehiclesReducer'
+import inspectorsReducer from './inspectorsReducer'
+import passtypesReducer from './passtypesReducer'
+import passsfaretypesReducer from './passfaretypeReducer'
 const allReducers=combineReducers({
 
     loginuser:LoginReducer,
@@ -14,7 +17,10 @@ const allReducers=combineReducers({
     vehicletier:vehicletierReducer,
     stations:stationsReducer,
     routes:routesReducer,
-    vehicles:vehiclesReducer
+    vehicles:vehiclesReducer,
+    inspectors:inspectorsReducer,
+    passtypes:passtypesReducer,
+    passfaretypes:passsfaretypesReducer
 
 });
 
