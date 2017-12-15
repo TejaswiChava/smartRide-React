@@ -12,14 +12,7 @@ import Dialog from 'react-bootstrap-dialog';
 import  {Modal,Button} from 'react-bootstrap';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 
-  //Material UI Components
-  import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-  import {Card} from 'material-ui/Card';
-  import Divider from 'material-ui/Divider';
-  // import {Table, TableBody, TableHeader,TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
-
-  //Import the pagination component
-  import Pagination from 'materialui-pagination';
+  
 
 
 class RiderTypes extends React.Component 

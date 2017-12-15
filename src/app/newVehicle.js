@@ -30,7 +30,7 @@ class Vehicle extends React.Component{
             return(
                 
             
-               <option key={user.id} value={user.name}>{user.name}</option>
+               <option key={user.id} value={user.id}>{user.name}</option>
               
             )
         })
@@ -69,7 +69,7 @@ newVehicle(event){
                             </div>
                             <div className="col-md-8">
                                
-                                     <select className="form-control form-input"  paceholder="Select" onChange={(event) => this.setState({name:event.target.value})}>
+                                     <select className="form-control form-input"  paceholder="Select" onChange={(event) => this.setState({id:event.target.value})}>
                                          <option disabled>Please Select</option>
                                          {this.createoptions()}
                                          
