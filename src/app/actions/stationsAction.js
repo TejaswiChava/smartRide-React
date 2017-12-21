@@ -8,7 +8,7 @@ export const UPDATE_STATION='UPDATE_STATION'
 
 
 const fetchSuccess=(response)=>{
-    console.log(response.data)
+    
     return{
         type:FETCH_STATIONS,
         payload:response.data

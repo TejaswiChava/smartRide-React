@@ -98,3 +98,35 @@ section{
           margin-top: 40px;
         }
           }
+      .configsidebar{
+  background-color:#FFCDD2;
+  height:880px
+}
+.is-active{
+  background-color: #E57373;
+  color:white
+  
+}
+.iconsinsidebar{
+  height:30px
+}
+.configsidebar>li>a {
+    padding: 14px 50px !important;
+    margin-right: 50px;
+        position: relative;
+    display: block;
+}
+  .configsidebar>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #e57373;
+}
+  img{
+    vertical-align: middle
+  }
+
+  .sidebaricon{
+    margin-left: 25px;
+  }
+  .sidebartext{
+    margin-left: 13px;
+  }

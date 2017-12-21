@@ -9,7 +9,6 @@ export const DELETE_VEHICLE='DELETE_VEHICLE';
 export const UPDATE_VEHICLE='UPDATE_VEHICLE';
 
 const fetchSuccess=(response)=>{
-    console.log(response.data)
     return{
         type:FETCH_VEHICLES,
         payload:response.data

@@ -8,7 +8,7 @@ export const POST_PASSFARETYPES='POST_PASSFARETYPES'
 export const DELETE_PASSFARETYPE='DELETE_PASSFARETYPE'
 
 const fetchSuccess=(response)=>{
-    console.log(response.data)
+
     return{
         type:FETCH_PASSFARETYPES,
         payload:response.data

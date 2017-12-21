@@ -269,4 +269,4 @@ class Home extends React.Component{
 
 }
 
-module.exports = Home;
+export default Home;

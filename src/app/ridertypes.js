@@ -32,6 +32,7 @@ componentWillMount(){
     this.props.fetchRiderTypes()
 
 }
+  
 close(event) {
   this.setState({ showModal: false ,
                     showDeleteModal:false});
@@ -118,7 +119,7 @@ render(){
             </div>
             <div className="row">
               <div className="col-lg-2 pull-right">
-                <Link to="/config/ridertypes/newridertype"> New RiderType </Link>
+                <Link  to="/config/ridertypes/newridertype"> New RiderType </Link>
               </div>
             </div>
             <div className="row">

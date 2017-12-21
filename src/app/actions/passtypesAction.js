@@ -9,7 +9,7 @@ export const DELETE_PASSTYPES='DELETE_PASSTYPES';
 export const UPDATE_PASSTYPES='UPDATE_PASSTYPES'
 
 const fetchSuccess=(response)=>{
-    console.log(response.data)
+ 
     return{
         type:FETCH_PASSTYPES,
         payload:response.data
