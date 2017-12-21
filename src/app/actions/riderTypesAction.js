@@ -33,7 +33,7 @@ export const UPDATE_RIDERTYPE='UPDATE_RIDERTYPE'
 
 
 const fetchSuccess=(response)=>{
-    console.log(response.data)
+    
     return{
         type:FETCH_RIDERTYPES,
         payload:response.data

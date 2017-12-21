@@ -9,6 +9,8 @@ import vehiclesReducer from './vehiclesReducer'
 import inspectorsReducer from './inspectorsReducer'
 import passtypesReducer from './passtypesReducer'
 import passsfaretypesReducer from './passfaretypeReducer'
+import ticketfaregroupReducer from './ticketfaregroupsReducer'
+import vehiclegroupReducer from './vehiclegroupReducer'
 const allReducers=combineReducers({
 
     loginuser:LoginReducer,
@@ -20,8 +22,9 @@ const allReducers=combineReducers({
     vehicles:vehiclesReducer,
     inspectors:inspectorsReducer,
     passtypes:passtypesReducer,
-    passfaretypes:passsfaretypesReducer
-
+    passfaretypes:passsfaretypesReducer,
+    ticketfaregroup:ticketfaregroupReducer,
+    vehiclegroup:vehiclegroupReducer
 });
 
 export default allReducers; 

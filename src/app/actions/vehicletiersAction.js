@@ -6,7 +6,6 @@ export const POST_VEHICLETIERS = 'POST_VEHICLETIERS';
 export const DELETE_VEHICLETIER = 'DELETE_VEHICLETIER';
 export const UPDATE_VEHICLETIER='UPDATE_VEHICLETIER';
 const fetchSuccess=(response)=>{
-    console.log(response.data)
     return{
         type:FETCH_VEHICLETIERS,
         payload:response.data

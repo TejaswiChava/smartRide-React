@@ -12,7 +12,7 @@ export const UPDATE_INSPECTOR='UPDATE_INSPECTOR';
 
 
 const fetchSuccess=(response)=>{
-    console.log(response.data)
+   
     return{
         type:FETCH_INSPECTORS,
         payload:response.data

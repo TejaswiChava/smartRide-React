@@ -7,7 +7,6 @@ export const FETCH_ROUTES='FETCH_ROUTES'
 
 
 const fetchSuccess=(response)=>{
-    console.log(response.data)
     return{
         type:FETCH_ROUTES,
         payload:response.data

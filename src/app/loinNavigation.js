@@ -27,10 +27,10 @@ class LoginNavigation extends React.Component{
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul className="nav navbar-nav navbar-right">
                     <li>
-                      <Link to="/config" >Config</Link>
+                      <Link  activeClassName='active' to="/config" >Config</Link>
                     </li>
                     <li>
-                        <a href="#login" >Vehicle Management</a>
+                      <Link  activeClassName='active' to="/vehiclemanagement" >Vehicle Management</Link>
                     </li>
                     <li>
                         <a href="#login" >Logout</a>
